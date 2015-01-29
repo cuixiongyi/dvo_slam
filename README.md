@@ -1,5 +1,6 @@
-THIS CODE CHECKOUT FROM tum-vision/dvo_slam
-This branch is modified to work with ROS hydro
+# THIS CODE CHECKOUT FROM tum-vision/dvo_slam
+
+# This branch is modified to work with ROS hydro
 
 
 # Dense Visual Odometry and SLAM (dvo_slam)
