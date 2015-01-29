@@ -21,6 +21,9 @@ rosbuild_find_ros_package(dynamic_reconfigure)
 include(${dynamic_reconfigure_PACKAGE_PATH}/cmake/cfgbuild.cmake)
 gencfg()
 
+include_directories(../sophus/include)
+
+
 # messages
 rosbuild_genmsg()
 

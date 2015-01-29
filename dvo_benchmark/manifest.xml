@@ -12,9 +12,10 @@
   <depend package="dvo_core"/>
   <depend package="dvo_ros"/>
   <depend package="dvo_slam"/>
-  <depend package="pcl"/>
   
-  <depend package="common_rosdeps" />
+  <depend package="pcl_ros"/>
+  <depend package="pcl_conversions"/>
+  
   <rosdep name="eigen" />
 
 </package>

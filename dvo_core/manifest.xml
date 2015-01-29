@@ -10,10 +10,10 @@
   <url>http://ros.org/wiki/dvo_core</url>
 
   <depend package="opencv2"/>
-  <depend package="pcl"/>
+  <depend package="pcl_ros"/>
+  <depend package="pcl_conversions"/>
   <depend package="sophus"/>
   
-  <depend package="common_rosdeps" />
   
   <rosdep name="eigen" />
   <rosdep name="tbb" />

@@ -298,7 +298,7 @@ void CameraKeyframeTracker::publishTransform(const std_msgs::Header& header, con
   tf_transform.child_frame_id_ = frame;
   tf_transform.stamp_ = header.stamp;
 
-  tf::TransformEigenToTF(transform, tf_transform);
+  tf::transformEigenToTF(transform, tf_transform);
 
   tb.sendTransform(tf_transform);
 
