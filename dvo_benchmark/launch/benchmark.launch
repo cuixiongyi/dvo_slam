@@ -1,6 +1,6 @@
 <launch>
-  <arg name="dataset" default="$(env PWD)" />
-  <arg name="rgbdpair_file" default="$(arg dataset)/assoc.txt" />
+  <arg name="dataset" default="/home/cuixiongyi/Downloads/dvo_slam/" />
+  <arg name="rgbdpair_file" default="$(arg dataset)/rgbd_dataset_freiburg1_xyz/assoc.txt" />
   <arg name="groundtruth_file" default="$(arg dataset)/groundtruth.txt" />
 
   <arg name="launch_dir" value="$(find dvo_benchmark)/launch" />
