@@ -171,7 +171,7 @@ public:
   cv::Mat normals, angles;
 
   cv::Mat rgb;
-
+//4*1 homogenous pointcloud from depth image
   PointCloud pointcloud;
 
   typedef cv::Vec<float, 8> Vec8f;
