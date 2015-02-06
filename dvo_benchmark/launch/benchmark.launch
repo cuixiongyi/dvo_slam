@@ -1,7 +1,7 @@
 <launch>
   <arg name="dataset" default="/home/cuixiongyi/Downloads/dvo_slam/" />
   <arg name="rgbdpair_file" default="$(arg dataset)/rgbd_dataset_freiburg1_xyz/assoc.txt" />
-  <arg name="groundtruth_file" default="$(arg dataset)/groundtruth.txt" />
+  <arg name="groundtruth_file" default="$(arg dataset)/rgbd_dataset_freiburg1_xyz/groundtruth.txt" />
 
   <arg name="launch_dir" value="$(find dvo_benchmark)/launch" />
   <arg name="output_dir" value="$(find dvo_benchmark)/output" />
@@ -29,10 +29,10 @@
     <param type="string" name="trajectory_file" value="$(arg trajectory_file)" />
     
     <param type="bool" name="show_estimate" value="true" />
-    <param type="bool" name="show_groundtruth" value="false" />
+    <param type="bool" name="show_groundtruth" value="true" />
     <param type="bool" name="keep_alive" value="$(arg keep_alive)" />
     
-    <param type="bool" name="render_video" value="false" />
+    <param type="bool" name="render_video" value="true" />
     <param type="string" name="video_folder" value="$(arg video_folder)" />
     
     <param type="string" name="camera_file" value="$(arg camera_file)" />

@@ -164,6 +164,7 @@ void LocalTracker::update(const dvo::core::RgbdImagePyramid::Ptr& image, dvo::co
 
   for(int idx = config.LastLevel; idx <= config.FirstLevel; ++idx)
   {
+    // build xyz Pointcloud from depth image
     image->level(idx).buildPointCloud();
     image->level(idx).buildAccelerationStructure();
   }

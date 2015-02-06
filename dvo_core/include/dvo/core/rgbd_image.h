@@ -111,6 +111,8 @@ public:
   RgbdImagePtr create(const cv::Mat& intensity, const cv::Mat& depth) const;
   RgbdImagePtr create() const;
 
+// build xyz Pointcloud from depth image
+  //in 1*4 homogenous vector
   void buildPointCloud(const cv::Mat &depth, PointCloud& pointcloud) const;
 private:
   size_t width_, height_;
@@ -190,6 +192,8 @@ public:
 
   void calculateNormals();
 
+// build xyz Pointcloud from depth image
+  //in 1*4 homogenous vector
   void buildPointCloud();
 
   //void buildPointCloud(const IntrinsicMatrix& intrinsics);
