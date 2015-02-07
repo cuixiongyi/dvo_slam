@@ -175,6 +175,9 @@ public:
   PointCloud pointcloud;
 
   typedef cv::Vec<float, 8> Vec8f;
+
+  //by buildacce
+  // structure with { intensity, depth, intensity_dx, intensity_dy, depth_dx, depth_dy, zeros, zeros};
   cv::Mat_<Vec8f> acceleration;
 
   size_t width, height;
